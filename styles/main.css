@@ -643,7 +643,7 @@ footer small {
 
 /************************* Страница категории ***************************/
 
-.article-holder {
+/*.article-holder {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -719,11 +719,11 @@ footer small {
 .more:hover {
   background: #e889b4;
   transition: .2s;
-}
+}*/
 
 /************************* Страница статей ***************************/
 
-.article-wrapper {
+/*.article-wrapper {
   display: flex;
   flex-flow: row wrap;
   height: 100%;
@@ -806,11 +806,11 @@ footer small {
 .article-wrapper aside img {
   width: 100%;
   height: auto;
-}
+}*/
 
 /************************* Страница 404 ***************************/
 
-.notfoundpage {
+/*.notfoundpage {
   text-align: center;
   font-size: 32px;
   margin: 30px 0;
@@ -837,11 +837,11 @@ footer small {
   width: 100%;
   top: 0;
   left: 0;
-}
+}*/
 
 /************************* Мобильные стили ***************************/
 
-@media (max-width: 800px) {
+/*@media (max-width: 800px) {
 
   header {
     display: block;
@@ -900,4 +900,4 @@ footer small {
     bottom: 10px;
     right: 10px;
   }
-}
+}*/
