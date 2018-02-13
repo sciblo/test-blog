@@ -4,6 +4,8 @@
 
 /*************************** Сброс стилей *****************************/
 
+/*@import 'godlike.min.css';*/
+
 * {
   box-sizing: border-box;
 }
@@ -65,9 +67,12 @@ a {
   clear: both;
 }
 
-body, html {padding: 0;margin: 0; height: 100%}
+body, html {padding: 0;margin: 0}
 body {
   display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  
   background: #f7f9fc;
   color: #000;
   font-family: 'Lato', sans-serif;
@@ -86,7 +91,6 @@ header, footer, main {
 header {
   padding: 80px 0;
   display: flex;
-  flex-grow: 0;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -97,7 +101,7 @@ header ul li, footer ul li {
 }
 header ul a, footer ul a {
   padding-bottom: 5px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   line-height: 25px;
   color: #333333;
@@ -150,7 +154,7 @@ header nav#language ul li:hover, header nav#language ul li.active {background: #
 header nav#language ul li a {color: #f6f6f6; border-bottom: none;}*/
 
 main {
-  flex-grow: 1;
+  flex: 1;
   line-height: 1.8;
 }
 section {
@@ -399,7 +403,6 @@ article .italic {
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 15px;
-
 }
 article .post_info_text {
   color: #333;
@@ -409,9 +412,7 @@ article .post_info_text {
   margin-bottom: 10px;
 }
 article .read_more {
-    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
-  /*-webkit-border-radius: 5px;
-  border-radius: 5px;*/
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
   margin-top: 10px;
   padding: 0 15px;
   float: left;
@@ -589,15 +590,72 @@ aside ul li a:hover {
   
 }
 
+.pagination {
+  width: 100%;
+  float: left;
+}
+
 
 footer {
-  flex-grow: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px 0;
-  border-top: 1px solid #d4d4d4;
+  flex: 0;
+  padding: 50px 0;
+  text-align: center;
+  background-color: #5c6bc0;
 }
+footer .logo {
+  color: #4f5ca6;
+  text-decoration: none;
+  font-size: 36px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  font-style: italic;
+  line-height: 50px;/* Приближение из-за подстановки шрифтов */
+  text-align: left;
+}
+footer li {
+  padding-top: 37px;
+  padding-bottom: 25px;
+}
+footer li a {
+  color: #fff;
+  font-size: 16px;/* Приближение из-за подстановки шрифтов */
+  font-weight: 700;
+  line-height: 1;
+  border-bottom: none;
+}
+footer li a:hover {
+  border-bottom: none;
+  color: #4d4d4d;
+}
+footer .about_site,
+footer .copyright {
+  color: #a9afdb;
+  margin: 0 auto;
+  font-weight: 400;
+  border-top: 2px solid #5765b5;
+}
+footer .about_site {
+  max-width: 730px;
+  padding: 38px 12px;
+  font-size: 13px;
+  line-height: 23px;
+}
+footer .copyright {
+  max-width: 700px;
+  font-size: 14px;
+  line-height: 30px;
+  padding-top: 31px;
+}
+footer .copyright a {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+footer i {
+  font-size: 24px;
+}
+
+
+
 footer small {
   font-size: 11px;
   text-align: center;
@@ -643,7 +701,7 @@ footer small {
 
 /************************* Страница категории ***************************/
 
-/*.article-holder {
+.article-holder {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -719,11 +777,11 @@ footer small {
 .more:hover {
   background: #e889b4;
   transition: .2s;
-}*/
+}
 
 /************************* Страница статей ***************************/
 
-/*.article-wrapper {
+.article-wrapper {
   display: flex;
   flex-flow: row wrap;
   height: 100%;
@@ -806,11 +864,11 @@ footer small {
 .article-wrapper aside img {
   width: 100%;
   height: auto;
-}*/
+}
 
 /************************* Страница 404 ***************************/
 
-/*.notfoundpage {
+.notfoundpage {
   text-align: center;
   font-size: 32px;
   margin: 30px 0;
@@ -837,11 +895,11 @@ footer small {
   width: 100%;
   top: 0;
   left: 0;
-}*/
+}
 
 /************************* Мобильные стили ***************************/
 
-/*@media (max-width: 800px) {
+@media (max-width: 800px) {
 
   header {
     display: block;
@@ -900,4 +958,4 @@ footer small {
     bottom: 10px;
     right: 10px;
   }
-}*/
+}
