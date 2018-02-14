@@ -110,10 +110,13 @@ header ul a, footer ul a {
   transition: .3s;
 }
 
-header ul a:hover, footer ul a:hover {
+header ul a:hover {
   color: #333;
   border-bottom: 3px solid #5c6bc0;
   transition: .3s;
+}
+header .active:hover {
+  border-bottom: none;
 }
 
 header ul a.active, footer ul a.active {
@@ -473,7 +476,7 @@ aside h3 {
   line-height: 30px;
 }
 aside ul {
-  padding: 0 40px 15px 40px;
+  padding: 0 40px 30px 40px;
 }
 aside ul li {
   list-style: none;
@@ -489,11 +492,11 @@ aside ul li a:hover {
   color: #5c6bc0;
 }
 
-.categories {
+.color {
   margin-bottom: 50px;
   width: 100%;
 }
-.categories ul li {
+.categories li {
   width: 100%;
   border-bottom: 1px solid #eee;
 }
@@ -506,12 +509,8 @@ aside ul li a:hover {
   width: 100%;
   padding-bottom: 15px;
 }
-.popular h3 {
-  padding-left: 0;
-  padding-right: 0;
+.popular_part h3 {
   padding-bottom: 19px;
-  margin-bottom: 13px;
-  border-bottom: 1px solid #eee;
 }
 .popular ul {
   width: 100%;
@@ -558,13 +557,9 @@ aside ul li a:hover {
   color: #333;
   margin-bottom: 13px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
 }
 .popular_post .post_name:hover {
   color: #5c6bc0;
-}
-.popular_post .post_name:last-child {
-  border-bottom: 1px solid #eee;
 }
 .popular_post a:hover {
   color: #aaa;
@@ -623,8 +618,10 @@ footer li a {
   border-bottom: none;
 }
 footer li a:hover {
-  border-bottom: none;
   color: #4d4d4d;
+}
+footer li a.active {
+  color: #bdbdbd;
 }
 footer .about_site,
 footer .copyright {
